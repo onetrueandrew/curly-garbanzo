@@ -25,7 +25,7 @@ body {
 .background {
     position: fixed;
     inset: 0;
-    background: url("wave-bg.svg") center / cover no-repeat;
+    background: url("assets/wave-bg.svg") center / cover no-repeat;
     will-change: transform;
     transform-origin: center;
     z-index: -1;
@@ -85,7 +85,7 @@ h1 span {
 }
 
 .code {
-    font-size: 1.9rem;
+    font-size: 1rem;
     font-weight: 600;
     letter-spacing: 0.18em;
     padding: 0.7rem 1.2rem;
@@ -179,4 +179,42 @@ h1 span {
     .code {
         font-size: 1.6rem;
     }
+}
+
+/* ===== Confirmation Badge ===== */
+
+.confirmation {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    margin-bottom: 1.4rem;
+    padding: 0.4rem 0.75rem;
+
+    border-radius: 999px;
+    background: rgba(34, 197, 94, 0.12);
+    border: 1px solid rgba(34, 197, 94, 0.35);
+
+    font-size: 0.85rem;
+    color: #bbf7d0;
+}
+/* last working as of */
+
+.confirmation .check {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 1.2rem;
+    height: 1.2rem;
+
+    border-radius: 50%;
+    background: rgba(34, 197, 94, 0.9);
+    color: #052e16;
+    font-weight: 900;
+    font-size: 0.75rem;
+}
+
+.confirmation strong {
+    color: #dcfce7;
 }
