@@ -79,3 +79,11 @@ if (confirmEl) {
 
     confirmEl.textContent = confirmedDate.toLocaleString(undefined, options);
 }
+
+function logEvent(event) {
+    fetch("/log", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ event })
+    }).catch(() => {});
+}
