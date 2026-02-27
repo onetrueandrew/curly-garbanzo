@@ -39,6 +39,7 @@ if (codeEl) {
 
         try {
             await navigator.clipboard.writeText(code);
+            logEvent("code_copied");
             codeEl.classList.add("copied");
 
             const original = codeEl.innerText;
