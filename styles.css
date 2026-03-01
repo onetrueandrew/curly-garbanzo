@@ -72,8 +72,18 @@ h1 span {
 
 /* ===== Referral Code Box ===== */
 
+/*
 .referral-box {
     margin-bottom: 1.8rem;
+}
+*/
+.referral-box {
+  background: rgba(10, 20, 40, 0.55);
+  backdrop-filter: blur(10px) saturate(120%);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 14px;
+  padding: 18px 22px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.35);
 }
 
 .referral-box span {
