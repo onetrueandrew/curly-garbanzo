@@ -227,3 +227,13 @@ h1 span {
 .confirmation strong {
     color: #dcfce7;
 }
+
+/* readability */
+.code {
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.code:active {
+  transform: scale(0.97);
+  box-shadow: 0 0 0 3px rgba(0, 200, 255, 0.4);
+}
